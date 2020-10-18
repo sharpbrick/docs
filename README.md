@@ -1,5 +1,7 @@
 # Powered UP - Community Docs
 
+The missing device docs ...
+
 ## Hubs
 
 | System Type | Technical Name | Name | LEGO# | Docs |
@@ -12,7 +14,7 @@
 ## Devices
 
 | IOTypeId | Technical Name | Name | LEGO# | Type | Docs |
-| ---| --- | --- | --- | --- | --- |
+| --- | --- | --- | --- | --- | --- |
 | 0x0014 | Voltage | n/a | n/a | Hub Device | [docs](devices/voltage.md) |
 | 0x0015 | Current | n/a | n/a | Hub Device | [docs](devices/current.md) |
 | 0x0017 | RgbLight | n/a | n/a | Hub Device | [docs](devices/rgblight.md) |
@@ -25,3 +27,13 @@
 | 0x003A | TechnicMediumHubGyroSensor | n/a | n/a | Hub Device | [docs](devices/technicmediumhub-gyrosensor.md) |
 | 0x003B | TechnicMediumHubTiltSensor | n/a | n/a | Hub Device | [docs](devices/technicmediumhub-tiltsensor.md) |
 | 0x003C | TechnicMediumHubTemperatureSensor | n/a | n/a | Hub Device | [docs](devices/technicmediumhub-temperaturesensor.md) |
+
+## LWP Notes
+
+- [Value Scaling](lwp/note-value-scaling.md)
+
+## Contribute
+
+This documentation is intented to be used across implementations by providing all technical details needed to provided in the available LEGO specifications. It is independent of the [sharpbrick/powered-up](https://github.com/sharpbrick/powered-up) project and should not be considered as a documentation of it.
+
+Issues and Pull Requests are welcome.
