@@ -6,7 +6,7 @@ The missing device docs ...
 
 | System Type | Technical Name | Name | LEGO# | Docs |
 | --- | --- | --- | --- | --- |
-| 0x20 | DuploTrainBaseHub | | 88006 | [docs](hubs/duplotrainbasehub.md) |
+| 0x20 | DuploTrainBaseHub | | 10874 | [docs](hubs/duplotrainbasehub.md) |
 | 0x40 | MoveHub | | 88006 | [docs](hubs/movehub.md) |
 | 0x41 | TwoPortHub | Hub | 88009 | [docs](hubs/twoporthub.md) |
 | 0x43 | MarioHub | Mario | 71360 | [docs](hubs/mariohub.md) |
