@@ -338,3 +338,50 @@ Human Readable Interpretation
       DeltaInterval: 0
       NotificationEnabled: False
 ````
+
+### DuploTrainBaseHub / Software: 0.0.0.1 / Hardware: 0.0.0.1
+
+Binary Export
+
+````
+06-00-01-0B-06-20
+0F-00-04-11-01-17-00-01-00-00-00-01-00-00-00
+0B-00-43-11-01-01-02-00-00-03-00
+05-00-43-11-02
+11-00-44-11-00-00-43-4F-4C-20-4F-00-00-00-00-00-00
+0E-00-44-11-00-01-00-00-00-00-00-00-20-41
+0E-00-44-11-00-02-00-00-00-00-00-00-C8-42
+0E-00-44-11-00-03-00-00-00-00-00-00-20-41
+0A-00-44-11-00-04-00-00-00-00
+08-00-44-11-00-05-00-44
+0A-00-44-11-00-80-01-00-01-00
+11-00-44-11-01-00-52-47-42-20-4F-00-00-00-00-00-00
+0E-00-44-11-01-01-00-00-00-00-00-00-7F-43
+0E-00-44-11-01-02-00-00-00-00-00-00-C8-42
+0E-00-44-11-01-03-00-00-00-00-00-00-7F-43
+0A-00-44-11-01-04-00-00-00-00
+08-00-44-11-01-05-00-10
+0A-00-44-11-01-80-03-00-03-00
+````
+
+Human Readable Interpretation
+
+````
+  - Port: 0x11 / 17
+    - IOTypeId: RgbLight / 0x0017 / 23
+      Revision: SW: 0.0.0.1, HW: 0.0.0.1
+      Capabilities: Output
+      ModeCombinations: []
+    - Mode 0: Name: COL O, Symbol: , Capability: Output
+      - DataSet: 1x SByte, TotalFigures: 1, Decimals: 0
+        Output Mapping: SupportFunctionalMapping20 Discrete
+        Raw Min:       0, Max:      10
+        Pct Min:       0, Max:     100 (scaling)
+        SI  Min:       0, Max:      10 (pass-through)
+    - Mode 1: Name: RGB O, Symbol: , Capability: Output
+      - DataSet: 3x SByte, TotalFigures: 3, Decimals: 0
+        Output Mapping: Absolute
+        Raw Min:       0, Max:     255
+        Pct Min:       0, Max:     100 (scaling)
+        SI  Min:       0, Max:     255 (pass-through)
+````

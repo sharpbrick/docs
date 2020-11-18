@@ -411,3 +411,50 @@ Human Readable Interpretation
       DeltaInterval: 0
       NotificationEnabled: False
 ````
+
+### DuploTrainBaseHub / Software: 0.0.0.1 / Hardware: 0.0.0.1
+
+Binary Export
+
+````
+06-00-01-0B-06-20
+0F-00-04-14-01-14-00-01-00-00-00-01-00-00-00
+0B-00-43-14-01-02-02-03-00-00-00
+05-00-43-14-02
+11-00-44-14-00-00-56-4C-54-20-4C-00-00-00-00-00-00
+0E-00-44-14-00-01-00-00-00-00-00-70-3E-45
+0E-00-44-14-00-02-00-00-00-00-00-00-C8-42
+0E-00-44-14-00-03-00-00-00-00-00-00-C8-45
+0A-00-44-14-00-04-6D-56-00-00
+08-00-44-14-00-05-10-00
+0A-00-44-14-00-80-01-01-04-00
+11-00-44-14-01-00-56-4C-54-20-53-00-00-00-00-00-00
+0E-00-44-14-01-01-00-00-00-00-00-70-3E-45
+0E-00-44-14-01-02-00-00-00-00-00-00-C8-42
+0E-00-44-14-01-03-00-00-00-00-00-00-C8-45
+0A-00-44-14-01-04-6D-56-00-00
+08-00-44-14-01-05-10-00
+0A-00-44-14-01-80-01-01-04-00
+````
+
+Human Readable Interpretation
+
+````
+  - Port: 0x14 / 20
+    - IOTypeId: Voltage / 0x0014 / 20
+      Revision: SW: 0.0.0.1, HW: 0.0.0.1
+      Capabilities: Input
+      ModeCombinations: []
+    - Mode 0: Name: VLT L, Symbol: mV, Capability: Input
+      - DataSet: 1x Int16, TotalFigures: 4, Decimals: 0
+        Input Mapping: Absolute
+        Raw Min:       0, Max:    3047
+        Pct Min:       0, Max:     100 (scaling)
+        SI  Min:       0, Max:    6400 (scaling)
+    - Mode 1: Name: VLT S, Symbol: mV, Capability: Input
+      - DataSet: 1x Int16, TotalFigures: 4, Decimals: 0
+        Input Mapping: Absolute
+        Raw Min:       0, Max:    3047
+        Pct Min:       0, Max:     100 (scaling)
+        SI  Min:       0, Max:    6400 (scaling)
+````
