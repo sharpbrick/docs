@@ -1,53 +1,95 @@
 # TechnicColorSensor
 
-TODO Description
+Color sensor which is part of the Lego Mindstorms (51515) set.
 
 **Type**: External Sensor
 
-**Status**: Exploration
+**Status**: Pending Issues
 
 ## Modes
 
-### Mode 0 - TODO
+### Mode 0 - Color
 
-TODO Description
+Detecting distinct LEGO Colors
 
-**Direction**: Input | Output
+**Direction**: Input
 
-**DataType**: TODO
-
-**Notes**
-- TODO
-
-### Mode 1 - TODO
-
-TODO Description
-
-**Direction**: Input | Output
-
-**DataType**: TODO
+**DataType**: sbyte expressing the discrete value of the color. See table.
 
 **Notes**
-- TODO
+- -1 if no color could be identified.
 
-## Known Related Commands
+### Mode 1 - Reflection
 
-- command 1
-- command 2
+Light reflected from the surface on which the sensor is applied to.
+
+**Direction**: Input
+
+**DataType**: sbyte (0-100)
+
+### Mode 2 - Ambient Light
+
+The Ambient Light received by the sensor
+
+**Direction**: Input
+
+**DataType**: sbyte (0-100)
+
+**Notes**
+- A notification deltaInterval of 1 is recommendable.
+
+### Mode 3 - Sector Lights (LIGHT)
+
+Three LEDS around the sensor illumating the scanned area. By default all one with full brightness.
+
+**Direction**: Output
+
+**DataType**: 3x sbyte with value ranges 0-100 defining brightness.
+
+**Notes**
+- Only works if after the WriteDirectPortModeData a PortInputFormatSetupSingleMessage is sent to the mode (as with the RgbLight)
+
+### Mode 4 - RawReflection
+
+Raw Data (most likely for Mode 1)
+
+### Mode 5 - RGB Sensor
+
+Color in RGB encoding (however, value range in 0-1024)
+
+**Direction**: Input
+
+**DataType**: 4x Int16 (r, g, b each in 0-1024) ... fourth value unknown.
+
+### Mode 6 - HSV Sensor
+
+Color in HSV encoding
+
+**Direction**: Input
+
+**DataType**: 3x Int16 (hue, saturation, value)
 
 ## Supplementary Definitions
 
-### some stuff
+### Color
 
-lists or other things
+| Idx | Color |
+| --- | --- |
+| -1 | n/a |
+| 0 | Black |
+| 3 | Blue |
+| 4 | Teal |
+| 5 | Green |
+| 7 | Yellow |
+| 9 | Red |
+| 10 | White |
+
+A shade of purple is missing, most likely in 1 or 2 (reference Mindstorm App Color selector)
 
 ## Open Questions
 
-- TODO
-
-## Resources
-
-- TODO
+- Complete Color Table Definition.
+- Why the port needs to be formated after the lights are instructed.
 
 ## Port and Port Mode Information
 

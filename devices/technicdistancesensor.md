@@ -68,7 +68,7 @@ Reporting a single reported value when subscribed (no updates).
 
 **Direction**: Output
 
-**DataType**: 4 SByte with brightness values of 0-100. Byte order is left-top, right-top, left-bottom, right-bottom (seen from the fron with Lego Logo readable)
+**DataType**: 4 SByte with brightness values of 0-100. Byte order is left-top, right-top, left-bottom, right-bottom (seen from the front with Lego Logo readable)
 
 ### Mode 6 - Ping
 
