@@ -32,8 +32,8 @@ The missing device docs ...
 | 0x003A | TechnicMediumHubGyroSensor | n/a | n/a | Hub Device | [docs](devices/technicmediumhub-gyrosensor.md) |
 | 0x003B | TechnicMediumHubTiltSensor | n/a | n/a | Hub Device | [docs](devices/technicmediumhub-tiltsensor.md) |
 | 0x003C | TechnicMediumHubTemperatureSensor | n/a | n/a | Hub Device | [docs](devices/technicmediumhub-temperaturesensor.md) |
-| 0x003D | TechnicColorSensor | n/a | n/a | External Sensor | [docs](devices/techniccolorsensor.md)
-| 0x003E | TechnicDistanceSensor | n/a | n/a | External Sensor | [docs](devices/technicdistancesensor.md)
+| 0x003D | TechnicColorSensor | n/a | set 51515, part 37308 | External Sensor | [docs](devices/techniccolorsensor.md)
+| 0x003E | TechnicDistanceSensor | n/a | set 51515, part 37316 | External Sensor | [docs](devices/technicdistancesensor.md)
 
 ## LWP Notes
 

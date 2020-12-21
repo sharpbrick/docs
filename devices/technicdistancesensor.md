@@ -1,14 +1,79 @@
 # TechnicDistanceSensor
 
-TODO Description
+Ultrasound based distance sensor (originally part of Spike Prime and Mindstorms)
 
 **Type**: External Sensor
 
-**Status**: Exploration
+**Status**: Well Defined (Exploration for extension interface)
 
 ## Modes
 
-### Mode 0 - TODO
+### Mode 0 - Long Range Distance (DISTL)
+
+Complete range from 0 to 250cm. Everything above is set to 0 and not reporting changes.
+
+**Direction**: Input
+
+**DataType**: Int16 reprecenting cm (positive)
+
+**Notes**
+- ⚠ [Scaling of Raw/SI](../lwp/note-value-scaling.md).
+- ⚠ Sub integer scaling (change of data type needed)
+
+
+### Mode 1 - Short Range Distance (DISTS)
+
+Mode specialized on short range distance. Everything above 32cm is set to 0 and not reporting changes.
+
+**Direction**: Input
+
+**DataType**: Int16 reprecenting cm (positive)
+
+**Notes**
+- ⚠ [Scaling of Raw/SI](../lwp/note-value-scaling.md).
+- ⚠ Sub integer scaling (change of data type needed)
+
+### Mode 2 - Single Value reported Distance (SINGL)
+
+Reporting a single reported value when subscribed (no updates).
+
+**Direction**: Input
+
+**DataType**: Int16 reprecenting cm (positive)
+
+**Notes**
+- ⚠ [Scaling of Raw/SI](../lwp/note-value-scaling.md).
+- ⚠ Sub integer scaling (change of data type needed)
+
+### Mode 3 - LISTN
+
+TODO: Boolean flag (most likely for something like listen)
+
+**Direction**: Input
+
+**DataType**: SByte reprecenting a boolean value 0 or 1
+
+### Mode 4 - Raw Ultrasound Sensor Output (TRAW)
+
+Reporting (most likely) the cycle time between ultrasound emission and receiving in uS.
+
+**Direction**: Input
+
+**DataType**: Int32 representing uS
+
+### Mode 5 - Eye Lights (LIGHT)
+
+Reporting a single reported value when subscribed (no updates).
+
+**Direction**: Output
+
+**DataType**: 4 SByte with brightness values of 0-100. Byte order is left-top, right-top, left-bottom, right-bottom (seen from the fron with Lego Logo readable)
+
+**Notes**
+- ⚠ [Scaling of Raw/SI](../lwp/note-value-scaling.md).
+- ⚠ Sub integer scaling (change of data type needed)
+
+### Mode 6 - Ping
 
 TODO Description
 
@@ -19,35 +84,28 @@ TODO Description
 **Notes**
 - TODO
 
-### Mode 1 - TODO
+### Mode 7 - ADRAW
 
-TODO Description
+TODO: Unclear Definition (most likely related to extension interface)
 
-**Direction**: Input | Output
+### Mode 8 - CALIB
 
-**DataType**: TODO
-
-**Notes**
-- TODO
+TODO: Unclear Definition
 
 ## Known Related Commands
 
-- command 1
-- command 2
+- WriteDirectModeDataMessage for Light
 
 ## Supplementary Definitions
 
-### some stuff
+### Extension interface on the adapter
 
-lists or other things
+The sensor has an electric interface allowing additional signals to be connected.
 
 ## Open Questions
 
-- TODO
-
-## Resources
-
-- TODO
+- Why the SINGL query option? That is part of the protocol itself to query for updates or single value.
+- Defintion for the extension interface.
 
 ## Port and Port Mode Information
 
