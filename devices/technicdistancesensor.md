@@ -48,6 +48,7 @@ Reporting a single reported value when subscribed (no updates).
 ### Mode 3 - LISTN
 
 TODO: Boolean flag (most likely for something like listen)
+TODO: Unclear Definition (most likely related to extension interface)
 
 **Direction**: Input
 
@@ -69,20 +70,9 @@ Reporting a single reported value when subscribed (no updates).
 
 **DataType**: 4 SByte with brightness values of 0-100. Byte order is left-top, right-top, left-bottom, right-bottom (seen from the fron with Lego Logo readable)
 
-**Notes**
-- ⚠ [Scaling of Raw/SI](../lwp/note-value-scaling.md).
-- ⚠ Sub integer scaling (change of data type needed)
-
 ### Mode 6 - Ping
 
-TODO Description
-
-**Direction**: Input | Output
-
-**DataType**: TODO
-
-**Notes**
-- TODO
+TODO: Unclear Definition (most likely related to extension interface)
 
 ### Mode 7 - ADRAW
 
