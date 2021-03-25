@@ -34,6 +34,7 @@ The missing device docs ...
 | 0x003C | TechnicMediumHubTemperatureSensor | n/a | n/a | Hub Device | [docs](devices/technicmediumhub-temperaturesensor.md) |
 | 0x003D | TechnicColorSensor | n/a | set 51515, part 37308 | External Sensor | [docs](devices/techniccolorsensor.md)
 | 0x003E | TechnicDistanceSensor | n/a | set 51515, part 37316 | External Sensor | [docs](devices/technicdistancesensor.md)
+| 0x0025 | VisionSensor | Color & Distance Sensor | part 88007 | External Sensor | [docs](devices/visionsensor.md)
 
 ## LWP Notes
 
