@@ -1,6 +1,6 @@
 # VisionSensor
 
-Color & distance sensor which is sold as it is own part.
+Color & distance sensor which is sold as its own part.
 
 **Type**: External Sensor
 
@@ -31,7 +31,9 @@ TODO: Further testing required for the range
 
 ### Mode 2 - Count
 
-Unclear, jumps by 5 it seems when observed
+Count close objects
+
+TODO: Further testing required
 
 **Direction**: Input
 
