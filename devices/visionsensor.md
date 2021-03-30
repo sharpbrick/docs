@@ -116,7 +116,6 @@ TODO: Unclear Definition
 
 ## Open Questions
 
-- Check color table if it matches the copied one from the TechnicColorSensor
 - Check what DEBUG and CALIB output
 - More and preciser testing for Proximity is required
 
