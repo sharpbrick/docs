@@ -21,9 +21,7 @@ Detecting distinct LEGO Colors
 
 ### Mode 1 - Proximity
 
-Reports the distance to the closes object in an abstract way, 0 for close and 10 for far away.
-
-TODO: Further testing required for the range
+Reports the distance to the closest object in an abstract way, 0 for close and 10 for far away.
 
 **Direction**: Input
 
@@ -73,7 +71,7 @@ Color in RGB encoding (however, value range in 0-1023)
 
 ### Mode 7 - IRTx
 
-TODO: Unclear Definition
+TODO
 
 **Direction**: Output
 
@@ -91,9 +89,11 @@ TODO: Unclear Definition
 
 **DataType**: 2x Int16
 
-### Mode 10 - Debug
+### Mode 10 - Calibration
 
-TODO: Unclear Definition
+Seems to trigger the calibration.
+
+* ⚠ Could potentially brick the sensor
 
 **Direction**: Input
 
@@ -115,9 +115,6 @@ TODO: Unclear Definition
 | 10 | White |
 
 ## Open Questions
-
-- Check what DEBUG and CALIB output
-- More and preciser testing for Proximity is required
 
 ## Port and Port Mode Information
 
