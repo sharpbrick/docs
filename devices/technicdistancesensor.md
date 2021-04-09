@@ -23,7 +23,7 @@ Complete range from 0 to 250cm. Everything above is set to 0 and not reporting c
 
 ### Mode 1 - Short Range Distance (DISTS)
 
-Mode specialized on short range distance. Everything above 32cm is set to 0 and not reporting changes.
+Mode specialized on short range distance (faster scanning). Everything above 32cm is set to 0 and not reporting changes.
 
 **Direction**: Input
 

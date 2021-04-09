@@ -23,6 +23,7 @@ The missing device docs ...
 | 0x002A | DuploTrainBaseSpeaker | n/a | n/a | Hub Device | [docs](devices/duplotrainbasespeaker.md)
 | 0x002B | DuploTrainColorSensor | n/a | n/a | Hub Device | [docs](devices/duplotrainbasecolorsensor.md)
 | 0x002C | DuploTrainSpeedometer | n/a | n/a | Hub Device | [docs](devices/duplotrainbasespeedometer.md)
+| 0x002E | TechnicLargeLinearMotor | Technic Large Motor | 88013 | External Motor | [docs](devices/techniclargelinearmotor.md)
 | 0x0046 | MarioHubDebug | n/a | n/a | Hub Device | [docs](devices/mariohub-debug.md) |
 | 0x0047 | MarioHubAccelerometer | n/a | n/a | Hub Device | [docs](devices/mariohub-accelerometer.md) |
 | 0x0049 | MarioHubTagSensor | n/a | n/a | Hub Device | [docs](devices/mariohub-tagsensor.md) |
